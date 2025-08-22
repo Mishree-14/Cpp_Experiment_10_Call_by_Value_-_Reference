@@ -2,7 +2,7 @@
 
 ## Aim
 
-To study and implement different ways of calling functions in C/C++:
+To study and implement different ways of calling functions in C++:
 
 Call by Value
 
@@ -58,7 +58,7 @@ Often used in C++ for efficiency and avoiding unnecessary memory copies
 
 | Method              | What is Passed?      | Changes Affect Original? | Memory Used | Safety & Simplicity |
 |---------------------|----------------------|---------------------------|-------------|----------------------|
-| Call by Value       | Copy of variable     |     No                     | More (copy) | Very safe            |
+| Call by Value       | Copy of variable     |     No                     | More        | Very safe            |
 | Call by Reference   | Address              |     Yes                    | Less        | Needs pointer care   |
 | Pass by Reference   | Reference            |     Yes                    | Less        | Simple & efficient   |
 
@@ -90,7 +90,7 @@ This shows how direct memory access allows permanent changes.
 
 ### Pass by Reference (using References in C++)
 
-A function is written using reference variables (C++ feature).
+A function is written using reference variables.
 
 Reference variables act like an alias (another name) for the original variables.
 
@@ -112,7 +112,7 @@ The programs collectively show how parameter passing techniques affect data shar
 
 ## Concepts Used
 
-Functions in C/C++
+Functions in C++
 
 Function parameters and return types
 
@@ -124,3 +124,12 @@ Difference between formal parameters (inside function) and actual parameters (in
 
 ## Conclusion
 
+From this experiment, I understood the difference between Call by Value, Call by Reference, and Pass by Reference.
+
+Call by Value is safe but does not allow the function to change original values.
+
+Call by Reference allows the function to directly modify the caller’s data, but it requires careful pointer handling.
+
+Pass by Reference  achieves the same as pointers but with a cleaner and more readable syntax.
+
+> This shows that the method of passing parameters directly affects whether changes made in a function are reflected in the original variables or not.
